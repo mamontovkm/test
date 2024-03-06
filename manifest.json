@@ -1,0 +1,34 @@
+{
+  "app_id":"digibot",
+  "version":"2.2.2",
+  "display_name":"DigiBot",
+  "homepage_url":"https://gitlab.digital.uni.rest/Infrastructure/chatops/digibot",
+  "requested_permissions":[
+    "act_as_bot",
+    "user_joined_channel_notification",
+    "act_as_admin",
+    "remote_oauth2",
+    "act_as_user"
+    ],
+  "requested_locations":[
+    "/command",
+    "/channel_header",
+    "/in_post"
+  ],
+  "http": {
+    "root_url":"https://digibot.infra.digital.uni.rest/",
+    "use_jwt":false
+  },
+  "bindings":{
+    "path":"/bot/bindings",
+    "expand":null,
+    "state":null
+    },
+  "on_install":null,
+  "on_uninstall":null,
+  "on_version_changed":null,
+  "get_oauth2_connect_url":null,
+  "on_oauth2_complete":null,
+  "on_remote_webhook":null,
+  "remote_webhook_auth_type":null
+}
